@@ -18,12 +18,9 @@ public class MessageController {
     @Autowired
     private MessageService messageService;
 
-    private final Logger logger = LoggerFactory.getLogger(MessageController.class);
-
     @PostMapping
     public  ResponseEntity save(@RequestBody Message message) {
         messageService.save(message);
-        //logger.info("fffff");
         return ResponseEntity.ok().build();
     }
 }
