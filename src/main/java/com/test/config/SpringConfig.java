@@ -13,7 +13,7 @@ public class SpringConfig {
     @Autowired
     private MessageService messageService;
 
-    @Scheduled(fixedDelay = 1000)
+    @Scheduled(fixedDelay = 10000)
     public void setTime(){
         messageService.copy();
     }
