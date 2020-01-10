@@ -9,6 +9,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 @Configuration
 @EnableScheduling
 public class SpringConfig {
+
     @Autowired
     private MessageService messageService;
 
