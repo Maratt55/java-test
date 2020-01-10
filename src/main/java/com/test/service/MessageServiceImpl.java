@@ -21,7 +21,7 @@ public class MessageServiceImpl implements MessageService {
         String[] s = str.split(" ");
         for (String ss : s) {
             if (ss.charAt(0) == 'a') {
-                string = string + " " + ss;
+                string += " " + ss;
             }
         }
         try {
